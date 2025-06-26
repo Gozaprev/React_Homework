@@ -1,0 +1,260 @@
+body {
+  background-color: #f3f4f6;
+  /* light gray */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #2563eb;
+  /* blue-600 */
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+}
+
+nav .nav-links a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  /* text-lg */
+  margin-right: 1.5rem;
+  text-decoration: none;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  text-decoration: underline;
+}
+
+nav .title {
+  color: #bfdbfe;
+  /* blue-200 */
+  font-family: monospace;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 768px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1,
+h2 {
+  color: #1e40af;
+  /* blue-700 */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+ul.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.post-list li {
+  background-color: white;
+  border-radius: 0.375rem;
+  /* rounded */
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+ul.post-list li:hover {
+  background-color: #eff6ff;
+  /* blue-50 */
+}
+
+.post-title {
+  font-size: 1.25rem;
+  /* text-xl */
+  font-weight: 600;
+  color: #2563eb;
+  /* blue-600 */
+  text-decoration: none;
+}
+
+.post-title:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  font-size: 0.875rem;
+  /* text-sm */
+  color: #6b7280;
+  /* gray-500 */
+  margin-top: 0.25rem;
+}
+
+.post-detail {
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  max-width: 640px;
+  margin: 3rem auto;
+}
+
+.post-detail h2 {
+  margin-top: 0;
+}
+
+.post-detail .post-meta {
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #1e40af;
+}
+
+.about {
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  max-width: 640px;
+  margin: 3rem auto;
+  color: #374151;
+  /* gray-700 */
+}
+
+.post-detail-error {
+  max-width: 640px;
+  /* Equivalent to max-w-2xl */
+  margin: 3rem auto;
+  /* Equivalent to mt-12 mx-auto */
+  padding: 1.5rem;
+  /* Equivalent to p-6 */
+  background-color: white;
+  border-radius: 0.375rem;
+  /* Equivalent to rounded */
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  /* Equivalent to shadow */
+  text-align: center;
+  /* Equivalent to text-center */
+}
+
+.post-detail-error h2 {
+  font-size: 1.5rem;
+  /* Equivalent to text-2xl */
+  font-weight: 700;
+  /* Equivalent to font-bold */
+  color: #dc2626;
+  /* Equivalent to text-red-600 */
+  margin-bottom: 1rem;
+  /* Equivalent to mb-4 */
+}
+
+/* Re-using .post-detail from previous example */
+.post-detail {
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  max-width: 640px;
+  /* Equivalent to max-w-2xl */
+  margin: 3rem auto;
+  /* Equivalent to mt-12 mx-auto */
+}
+
+.post-detail h2 {
+  font-size: 1.875rem;
+  /* Equivalent to text-3xl */
+  font-weight: 700;
+  /* Equivalent to font-bold */
+  color: #1e40af;
+  /* Equivalent to text-blue-700 */
+  margin-bottom: 0.5rem;
+  /* Equivalent to mb-2 */
+  /* Remove margin-top: 0; if it was present here, it's generally handled by base styles */
+}
+
+.post-detail .post-meta {
+  display: flex;
+  /* Equivalent to flex */
+  align-items: center;
+  /* Equivalent to items-center */
+  gap: 1rem;
+  /* Equivalent to gap-4 */
+  color: #6b7280;
+  /* Equivalent to text-gray-500 */
+  font-size: 0.875rem;
+  /* Equivalent to text-sm */
+  margin-bottom: 1rem;
+  /* Equivalent to mb-4 */
+}
+
+.post-detail .post-content {
+  color: #374151;
+  /* Equivalent to text-gray-800 */
+  margin-bottom: 2rem;
+  /* Equivalent to mb-8 */
+  white-space: pre-line;
+  /* Equivalent to whitespace-pre-line for content formatting */
+}
+
+/* Re-using .back-link from previous example */
+.back-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #1e40af;
+}
+
+.about {
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  max-width: 640px;
+  /* Equivalent to max-w-2xl */
+  margin: 3rem auto;
+  /* Equivalent to mt-12 mx-auto */
+  color: #374151;
+  /* Equivalent to text-gray-700 for paragraphs */
+}
+
+.about h1 {
+  font-size: 1.875rem;
+  /* Equivalent to text-3xl */
+  font-weight: 700;
+  /* Equivalent to font-bold */
+  color: #1e40af;
+  /* Equivalent to text-blue-700 */
+  margin-bottom: 1rem;
+  /* Equivalent to mb-4 */
+}
+
+.about p {
+  margin-bottom: 0.5rem;
+  /* Equivalent to mb-2 */
+}
+
+.about .author-name {
+  font-weight: 600;
+  /* Equivalent to font-semibold */
+}
